@@ -1,0 +1,130 @@
+/* Navbar */
+.navbar {
+  background-color: #fbfbfb; /* สีพื้นหลังเมนู */
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.navbar .nav-links li a:hover {
+  background-color: #ffffff33; /* สีขาวใส ๆ เมื่อ hover */
+  color: #fff;
+}
+
+.navbar .nav-links li a.active {
+  background-color: #fff;
+  color: #000000;
+}
+/* online.css */
+
+/* Header */
+.header {
+  background-color: #f0f8ff;
+  text-align: center;
+  padding: 50px 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Courses Section */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.course-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.course-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #6f0d0d;
+}
+
+.course-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.course-card button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.course-card button:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  color: #666;
+}
+

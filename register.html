@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">ระบบอบรมออนไลน์</a>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="online.html">รายวิชาออนไลน์</a></li>
+                <li><a href="register.html" class="active">ลงทะเบียน</a></li>
+                <li><a href="login.html">เข้าสู่ระบบ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="form-section">
+        <div class="form-container">
+            <h2>ลงทะเบียนผู้ใช้งาน</h2>
+            <form action="#" method="POST">
+                <input type="text" name="fullname" placeholder="ชื่อ - นามสกุล" required>
+                <input type="text" name="student_id" placeholder="รหัสนักศึกษา" required>
+                <input type="text" name="faculty" placeholder="คณะ / สาขา" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="เบอร์โทรศัพท์" required>
+                <select name="course" required>
+                    <option value="">-- เลือกหลักสูตร --</option>
+                    <option value="programming">การเขียนโปรแกรมเบื้องต้น</option>
+                    <option value="web">การพัฒนาเว็บไซต์</option>
+                    <option value="database">การจัดการฐานข้อมูล</option>
+                    <option value="ai">ปัญญาประดิษฐ์เบื้องต้น</option>
+                </select>
+                <label class="checkbox-row">
+            <input type="checkbox" name="terms" required>
+            <span>ยอมรับเงื่อนไข</span>
+                </label>
+                <button type="submit">ยืนยันการลงทะเบียน</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
